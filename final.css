@@ -1,0 +1,74 @@
+body {
+	background: 	#efefef;
+	color: 			silver;
+	font: 			normal 22px/30px "Helvetica Neue", sans-serif;
+	padding: 		44px;
+}
+.modal {	
+	background: white no-repeat;
+	position: relative;
+	height: 198px;
+	width: 264px;
+	margin: 0 1px 1px 0;
+	text-align: center;
+}
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+			
+
+/* Figure out how to make this block dynamic from the DB */
+/*
+#rider		{ background-image: url('images/rider-small.jpg'); 	}
+#furtado	{ background-image: url('images/furtado-small.jpg'); }
+#joplin		{ background-image: url('images/joplin-small.jpg'); 	}
+#juno		{ background-image: url('images/juno-small.jpg'); 	}
+#nevis		{ background-image: url('images/nevis-small.jpg'); 	}
+#origin		{ background-image: url('images/origin-small.jpg'); 	}
+*/			
+			
+#lightbox {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+			
+#lightbox img {
+	width: 100%;
+}
+			
+nav {
+	left: -999px;
+	position: fixed;
+}
+			
+.front {
+	left: auto;
+	z-index: 40;
+}
+			
+#close {
+	background: url('images/navigation.png');
+}
+			
+#prev {
+	background: url('images/navigation.png');
+}
+			
+#next {
+	background: url('images/navigation.png');
+}
+			
+nav ul {
+	height: 123px;
+	padding: 0;
+}
+			
+nav li {
+	height: 41px;
+	width: 41px;
+	background-repeat: no-repeat;
+}
