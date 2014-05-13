@@ -1,4 +1,5 @@
 body {
+	text-transform: uppercase;
 	background: 	#efefef;
 	color: 			silver;
 	font: 			normal 22px/30px "Helvetica Neue", sans-serif;
@@ -11,6 +12,7 @@ body {
 	width: 264px;
 	margin: 0 1px 1px 0;
 	text-align: center;
+	float: left;
 }
 .wrapper {
 	width: 800px;
@@ -26,9 +28,13 @@ body {
 #juno		{ background-image: url('images/juno-small.jpg'); 	}
 #nevis		{ background-image: url('images/nevis-small.jpg'); 	}
 #origin		{ background-image: url('images/origin-small.jpg'); 	}
-*/			
+*/		
+/*
+ * PHP FILE
+ */
 			
 #lightbox {
+	background: no-repeat;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -41,7 +47,7 @@ body {
 }
 			
 nav {
-	left: -999px;
+	left: -2000px;
 	position: fixed;
 }
 			
@@ -55,14 +61,15 @@ nav {
 }
 			
 #prev {
-	background: url('images/navigation.png');
+	background: url('images/navigation.png') 0 82px;
 }
 			
 #next {
-	background: url('images/navigation.png');
+	background: url('images/navigation.png') 0 41px;
 }
 			
 nav ul {
+	list-style: none;
 	height: 123px;
 	padding: 0;
 }
