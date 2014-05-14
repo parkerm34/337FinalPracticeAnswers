@@ -8,6 +8,13 @@ function initBike() {
 	});
 }
 
+function listBikes() {
+	$.post("bikesDBH.php", {}, function(returnedData){
+		var results = $.parseJSON(returnedData);
+		console.log(results);
+	});
+}
+
 var currentBike = "";
 
 // Dynamic code from php does not like the $(".modal").click code, therefore

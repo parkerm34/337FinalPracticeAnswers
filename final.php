@@ -16,6 +16,10 @@
 		<!-- Date: 2014-05-12 -->
 	</head>
 	
+	<script>
+		listBikes();
+	</script>
+	
 
 	<section class="wrapper">
 		<div id="lightbox"> </div>
@@ -68,6 +72,7 @@
 	<script>
 		// Initializes the array of bikes for the scrolling pictures
 		initBike();
+		listBikes();
 	</script>
 	</section>
 
